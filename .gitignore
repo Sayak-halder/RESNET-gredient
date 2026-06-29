@@ -1,0 +1,25 @@
+# Data
+data/
+rps/
+rps-test-set/
+!outputs/charts/*.png  # Allow the gradient charts to be committed if you want
+
+# Model Weights
+outputs/weights/
+*.pth
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
