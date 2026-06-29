@@ -13,7 +13,7 @@ This project is a **ResNet Anatomy Lab**. I built ResNet from scratch in PyTorch
 
 The entire premise of the ResNet paper is that identity mappings (skip connections) allow gradients to flow directly backward through the network. To prove this, I wrote custom PyTorch hooks to capture the **L2 norm of the gradients** at each major layer during the backward pass.
 
-![Gradient Flow Comparison](outputs/charts/gradient_flow_comparison.png)
+![Gradient Flow Comparison](gradient_flow_comparison.png)
 
 ### How to read this graph:
 *   **The Baseline (ResNet Thesis):** Both lines show a stable, gradual decline rather than a catastrophic drop to zero. This empirically proves that the skip connections ($F(x) + x$) are successfully routing gradients backward, preventing the vanishing gradient problem that plagues plain networks.
